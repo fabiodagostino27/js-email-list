@@ -7,7 +7,7 @@ function generateEmails() {
             .then(response => response.json())
             .then(data => {
                 console.log(data)
-                list.innerHTML += `<li>${data.response}</li>`
+                list.innerHTML += `<li class="list-group-item list-group-item-action">${data.response}</li>`
             })
             .catch(error => {
                 console.error(error)
