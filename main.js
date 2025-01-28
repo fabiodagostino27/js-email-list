@@ -6,7 +6,6 @@ function generateEmails() {
         fetch("https://flynn.boolean.careers/exercises/api/random/mail")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 list.innerHTML += `<li class="list-group-item list-group-item-action">${data.response}</li>`
             })
             .catch(error => {
